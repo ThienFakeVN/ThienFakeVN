@@ -51,7 +51,8 @@ Visual Studio Code (phần mềm tôi sử dụng để lập trình)
 w3schools.com (nơi đầu tiên tôi bắt đầu học lập trình)
 Đứa nào đó tên là Thanh Bình học cùng trường với tôi (công ty \033[38;2;163;73;164mB\033[0m trong trò chơi là viết tắt của \033[38;2;163;73;164;4mT\033[38;2;163;73;164mhanh \033[38;2;163;73;164;4mB\033[38;2;163;73;164mình\033[0m mà, đúng không?)
 Màn hình Terminal nền đen chữ trắng (sử dụng mặc định cho các tệp lập trình)
-Ngôn ngữ lập trình Python (ngôn ngữ tôi sử dụng để lập trình)''')
+Ngôn ngữ lập trình Python (ngôn ngữ tôi sử dụng để lập trình)
+Và vâng, không thể thiếu, chính là các bạn! (những người đã chơi trò chơi này)''')
     elif command.casefold() == 'aboutupdate': print('''
 \033[3mINVESTER: AMPLIFIED (v1.0)\033[0m là bản cập nhật đầu tiên của \033[3mINVESTER: AMPLIFIED\033[0m. Bản cập nhật gồm những nội dung sau:
     - Người chơi là nhà đầu tư của 3 công ty \033[38;2;63;72;204mA\033[0m, \033[38;2;163;73;164mB\033[0m và \033[38;2;136;0;21mC\033[0m. Người chơi ban đầu có 100 rúp Nga để đầu tư vào 3 công ty này;
