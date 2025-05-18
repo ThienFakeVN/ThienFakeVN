@@ -1,5 +1,10 @@
 import random, os, json
 
+"""
+KỂ CẢ KHI ĐÂY LÀ TRÒ CHƠI MÃ NGUỒN MỞ, ĐÙNG CHỈNH SỬA MÃ CỦA TRÒ CHƠI
+NÓ CÓ THỂ DẪN ĐẾN CÁC LỖI KHÔNG LƯỜNG TRƯỚC!
+"""
+
 print('Bạn có 100 rúp Nga. Bạn định đi đầu tư.')
 print('Chào mừng đến với \033[3mINVESTER: AMPLIFIED (v1.0)\033[0m!')
 
@@ -38,7 +43,7 @@ Tài khoản GitHub cho ai cần: ThienFakeVN.''')
 \033[3mINVESTER: AMPLIFIED\033[0m là bản làm lại của \033[3mINVESTER\033[0m. Đây là trò chơi miễn phí và mã nguồn mở.
 CHỊU TRÁCH NGHIỆM SẢN XUẤT     ThienFakeVN
 NỘI DUNG TRÒ CHƠI              ThienFakeVN
-VIẾT CODE                      ThienFakeVN
+VIẾT MÃ                        ThienFakeVN
 
 \033[1mSPECIAL THANKS\033[0m
 Ngân hàng Trung ương Liên Bang Nga (phát hành đồng rúp Nga, đồng tiền được sử dụng trong trò chơi là rúp Nga, nếu bạn chưa để ý)
@@ -157,8 +162,9 @@ def update():
             print('Đã tìm thấy bản cập nhật.')
             command = input('Nhập "UPDATE" để cập nhật: ')
             if command.casefold() == 'update':
+                file_path = os.path.abspath(__file__)
                 update_content = requests.get(f'https://raw.githubusercontent.com/ThienFakeVN/ThienFakeVN/refs/heads/invester/{chosen_update}.py')
-                with open('invester_amplified.py', 'wb') as rewrite:
+                with open(file_path, 'wb') as rewrite:
                     rewrite.write(update_content.content)
                     exit()
             else: action()
