@@ -158,7 +158,7 @@ def update():
             command = input('Nhập "UPDATE" để cập nhật: ')
             if command.casefold() == 'update':
                 update_content = requests.get(f'https://raw.githubusercontent.com/ThienFakeVN/ThienFakeVN/refs/heads/invester/{chosen_update}.py')
-                with open('invester_amplified.py', 'wb', encoding='utf-8') as rewrite:
+                with open('invester_amplified.py', 'wb') as rewrite:
                     rewrite.write(update_content.content)
                     exit()
             else: action()
