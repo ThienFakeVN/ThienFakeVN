@@ -56,7 +56,8 @@ Và vâng, không thể thiếu, chính là các bạn! (những người đã c
     elif command.casefold() == 'aboutupdate': print('''
 \033[3mINVESTER: AMPLIFIED (v1.0)\033[0m là bản cập nhật đầu tiên của \033[3mINVESTER: AMPLIFIED\033[0m. Bản cập nhật gồm những nội dung sau:
     - Người chơi là nhà đầu tư của 3 công ty \033[38;2;63;72;204mA\033[0m, \033[38;2;163;73;164mB\033[0m và \033[38;2;136;0;21mC\033[0m. Người chơi ban đầu có 100 rúp Nga để đầu tư vào 3 công ty này;
-    - Khu vực action có thể chạy các lệnh: ABOUTME, ABOUTUS, ABOUTUPDATE, CREDITS, CWD, HELP, START, STORY, ?;''')
+    - Khu vực action có thể chạy các lệnh: ABOUTME, ABOUTUS, ABOUTUPDATE, CREDITS, CWD, HELP, READ, START, STORY, UPDATE ,?;
+    - ...''')
     elif command.casefold() == 'update': update()
     else: print('Không hợp lệ, nhập "?" để xem danh sách các lệnh.')
     action()
