@@ -15,9 +15,9 @@ def action():
     if command.casefold() == 'start': play()
     elif command.casefold() == 'story': print('''
 Bạn là nhà đầu tư của 3 công ty này:
-    - Công ty \033[38;2;63;72;204mA\033[0m: Viết tắt của \033[38;2;63;72;204;4mA\033[38;2;63;72;204mđù\033[0m, phát triển chậm nhưng tốt và ổn định;
-    - Công ty \033[38;2;163;73;164mB\033[0m: Viết tắt của, ờ... \033[38;2;163;73;164;4mT\033[38;2;163;73;164mhanh \033[38;2;163;73;164;4mB\033[38;2;163;73;164mình\033[0m? Vâng, \033[38;2;163;73;164;4mT\033[38;2;163;73;164mhanh \033[38;2;163;73;164;4mB\033[38;2;163;73;164mình\033[0m, phát triển trung bình;
-    - Công ty \033[38;2;136;0;21mC\033[0m: Viết tắt của \033[38;2;136;0;21;4mC\033[38;2;136;0;21moin \033[38;2;136;0;21;4mC\033[38;2;136;0;21mard\033[0m, phát triển rất bất ổn. Chắc thằng chủ tịch công ty này đem tiền đầu tư đi đánh lô.
+    - Công ty \033[38;2;63;72;204mA\033[0m: Viết tắt của \033[38;2;63;72;204;4mA\033[38;2;63;72;204mđù\033[0m. Lãi và lỗ ít, thường ít lỗ hơn lãi;
+    - Công ty \033[38;2;163;73;164mB\033[0m: Viết tắt của, ờ... \033[38;2;163;73;164;4mT\033[38;2;163;73;164mhanh \033[38;2;163;73;164;4mB\033[38;2;163;73;164mình\033[0m? Vâng, \033[38;2;163;73;164;4mT\033[38;2;163;73;164mhanh \033[38;2;163;73;164;4mB\033[38;2;163;73;164mình\033[0m. Lãi và lỗ trung bình;
+    - Công ty \033[38;2;136;0;21mC\033[0m: Viết tắt của \033[38;2;136;0;21;4mC\033[38;2;136;0;21moin \033[38;2;136;0;21;4mC\033[38;2;136;0;21mard\033[0m. Lãi thì mua siêu xe còn lỗ thì bán nhà, tiếc là thường lỗ hơn lãi. Chắc thằng chủ tịch công ty này đem tiền đầu tư đi đánh lô.
 Lãi — lỗ của các công ty sẽ ảnh hưởng túi tiền của bạn và ảnh hưởng bao nhiêu tùy thuộc vào số tiền bạn đầu tư vào 3 công ty này.
 Chúc 100 rúp Nga của bạn không bay màu!''')
     elif command.casefold() == 'help' or command.casefold() == '?' : print('''
