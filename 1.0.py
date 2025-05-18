@@ -11,7 +11,7 @@ print('Chào mừng đến với \033[3mINVESTER: AMPLIFIED (v1.0)\033[0m!')
 def action():
     print('')
     command = None
-    command = input('Nhập một lệnh, như "start" để bắt đầu trò chơi, "story" để xem cốt truyện hay "?" để xem danh sách lệnh: ')
+    command = input('Nhập một lệnh, như "START" để bắt đầu trò chơi, "STORY" để xem cốt truyện hay "?" để xem danh sách lệnh: ')
     if command.casefold() == 'start': play()
     elif command.casefold() == 'story': print('''
 Bạn là nhà đầu tư của 3 công ty này:
