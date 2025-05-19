@@ -175,5 +175,4 @@ def update():
 
 print('''
 (Gọi đây là khu vực action, nơi bạn sử dụng các lệnh)''')
-action()ơi bạn sử dụng các lệnh)''')
 action()
