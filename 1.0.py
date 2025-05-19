@@ -112,7 +112,7 @@ def game_over():
     print('')
     print('Bạn hết tiền! Trò chơi kết thúc!')
     print(f'Trước khi đi, seed của trò chơi của bạn là {game_seed}.')
-    command = input(f'Và bạn có thể tải dữ liệu của trò chơi này vào một tệp .json bằng cách nhập "SAVE": ')
+    command = input(f'Và bạn có thể lưu dữ liệu của trò chơi này vào một tệp .json bằng cách nhập "SAVE": ')
     if command.casefold() == 'save':
         game_code = random.randint(1, 999999999999999999999999)
         with open(f'invested{game_code}.json', 'w', encoding='utf-8') as invested:
