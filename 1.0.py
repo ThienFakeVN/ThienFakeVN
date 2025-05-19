@@ -56,7 +56,7 @@ Và vâng, không thể thiếu, chính là các bạn! (những người đã c
     elif command.casefold() == 'aboutupdate': print('''
 \033[3mINVESTER: AMPLIFIED (v1.0)\033[0m là bản cập nhật đầu tiên của \033[3mINVESTER: AMPLIFIED\033[0m. Bản cập nhật gồm những nội dung sau:
     - Người chơi là nhà đầu tư của 3 công ty \033[38;2;63;72;204mA\033[0m, \033[38;2;163;73;164mB\033[0m và \033[38;2;136;0;21mC\033[0m. Người chơi ban đầu có 100 rúp Nga để đầu tư vào 3 công ty này;
-    - Khu vực action có thể chạy các lệnh: ABOUTME, ABOUTUS, ABOUTUPDATE, CREDITS, CWD, HELP, READ, START, STORY, UPDATE ,?;
+    - Khu vực action có thể chạy các lệnh: ABOUTME, ABOUTUS, ABOUTUPDATE, CREDITS, CWD, HELP, READ, START, STORY, UPDATE, ?;
     - ...''')
     elif command.casefold() == 'update': update()
     else: print('Không hợp lệ, nhập "?" để xem danh sách các lệnh.')
@@ -97,7 +97,7 @@ def money_input():
         print('Lỗi: Không thể nhập số âm.')
         money_input()
     if A > money or B > money or C > money or A + B > money or B + C > money or A + C > money or A + B + C > money:
-        print('Lỗi: Vung lòng không nhập quá số tiền hiện có.')
+        print('Lỗi: Vui lòng không nhập quá số tiền hiện có.')
         money_input()
     if A + B + C < money:
         money_remains = money - (A + B + C)
@@ -175,4 +175,5 @@ def update():
 
 print('''
 (Gọi đây là khu vực action, nơi bạn sử dụng các lệnh)''')
+action()ơi bạn sử dụng các lệnh)''')
 action()
