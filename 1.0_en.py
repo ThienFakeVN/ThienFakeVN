@@ -155,7 +155,7 @@ def update():
         print('Error: requests module was not found. Please make sure that you have downloaded this module.')
         action()
     print('')
-    updates = requests.get('https://raw.githubusercontent.com/ThienFakeVN/ThienFakeVN/refs/heads/invester/updates.py')
+    updates = requests.get('https://raw.githubusercontent.com/ThienFakeVN/ThienFakeVN/refs/heads/invester/updates_en.py')
     environment = {}
     exec(updates.content, environment)
     chosen_update = input('Choose the update version you want to play: ')
