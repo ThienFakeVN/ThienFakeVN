@@ -17,7 +17,7 @@ div.border1 {
     background-color: rgb(255, 255, 204);
     font-family: 'Consolas', "courier new";
     padding: 10px 10px 10px 10px;
-    margin: auto;
+    margin: 2em auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
