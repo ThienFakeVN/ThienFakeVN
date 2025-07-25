@@ -16,7 +16,7 @@ div.border1 {
     border-left: solid yellow;
     background-color: rgb(255, 255, 204);
     font-family: 'Consolas', "courier new";
-    padding: 2px 2px 2px 2px;
+    padding: 10px 10px 10px 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,13 +29,13 @@ h1, h2, h3, h4, h5, h6 {
 strong {
     color: red;
     font-family: 'Consolas', "courier new";
-    background-color: #ffcccc;
+    background-color: rgb(255, 204, 204);
 }
 
 code {
     font-family: Consolas, "courier new";
     color: crimson;
-    background-color: #f1f1f1;
+    background-color: rgb(241, 241, 241);
     padding: 2px;
     font-size: 105%;
 }
