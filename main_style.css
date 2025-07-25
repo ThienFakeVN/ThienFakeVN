@@ -7,10 +7,9 @@ html {
     text-align: justify;
 }
 
-p, ul, li {
+p, ul {
     color: black;
     font-family: 'Consolas', "courier new";
-    margin: auto;
 }
 
 div.border1 {
