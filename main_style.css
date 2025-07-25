@@ -1,5 +1,4 @@
-html { /* Chép từ https://rebane2001.com/ok_hand.css */
-    background-color: #ffffe6;
+html {
     font-size: 16px;
     margin: 2em auto;
     max-width: 1000px;
@@ -8,20 +7,29 @@ html { /* Chép từ https://rebane2001.com/ok_hand.css */
     text-align: justify
 }
 
-p, ul { /* Đoạn văn bản và danh sách */
+p, ul {
     color: black;
-    font-family: 'Consolas';
+    font-family: 'Consolas', "courier new";
 }
 
-h1, h2, h3, h4, h5, h6 { /* Đề mục */
+div.border1 {
+    border-left: solid yellow;
+    background-color: rgb(255, 255, 204);
+}
+
+h1, h2, h3, h4, h5, h6 {
     display: block;
     color: black;
     font-family: 'Consolas';
     font-weight: bold;
 }
 
-strong { /* Highlight phần quan trọng */
+strong {
     color: red;
     font-family: 'Consolas';
     background-color: #ffcccc;
+}
+
+code {
+    color: crimson;
 }
