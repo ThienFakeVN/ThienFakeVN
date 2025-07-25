@@ -10,6 +10,7 @@ html {
 p, ul {
     color: black;
     font-family: 'Consolas', "courier new";
+    margin: 2em auto;
 }
 
 div.border1 {
