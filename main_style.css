@@ -15,21 +15,26 @@ p, ul {
 div.border1 {
     border-left: solid yellow;
     background-color: rgb(255, 255, 204);
+    font-family: 'Consolas', "courier new";
+    padding: 2px 2px 2px 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     display: block;
     color: black;
-    font-family: 'Consolas';
+    font-family: 'Consolas', "courier new";
     font-weight: bold;
 }
 
 strong {
     color: red;
-    font-family: 'Consolas';
+    font-family: 'Consolas', "courier new";
     background-color: #ffcccc;
 }
 
 code {
-    color: crimson;
+  font-family: Consolas, "courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
 }
