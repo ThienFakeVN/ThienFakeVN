@@ -18,6 +18,7 @@ div.border1 {
     font-family: 'Consolas', "courier new";
     padding: 10px 10px 10px 10px;
     margin: 2em auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 h1, h2, h3, h4, h5, h6 {
