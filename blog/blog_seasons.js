@@ -21,7 +21,7 @@ else if (currentSeason === "Summer")
     } // Original: Luc Viatour | https://Lucnix.be / Wikimedia Commons / “Field Hamois Belgium Luc Viatour” / CC BY-SA 3.0
 else if (currentSeason === "Autumn" || currentSeason === "Independence Day" || currentSeason === "My birthday!") {
     document.getElementById("season").innerText = "body {background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/D%C3%BClmen%2C_Wildpark_--_2014_--_3808_color_balanced.jpg');}";
-    document.getElementById("season").innerText = "Credit to the background: Original: Dietmar Rabich (Derivative work: Sting) / Wikimedia Commons / “Dülmen, Wildpark -- 2014 -- 3808 color balanced” / CC BY-SA 4.0;
+    document.getElementById("season").innerText = "Credit to the background: Original: Dietmar Rabich (Derivative work: Sting) / Wikimedia Commons / “Dülmen, Wildpark -- 2014 -- 3808 color balanced” / CC BY-SA 4.0;"
     } // Original: Dietmar Rabich (Derivative work: Sting) / Wikimedia Commons / “Dülmen, Wildpark -- 2014 -- 3808 color balanced” / CC BY-SA 4.0
 else {
     document.getElementById("season").innerText = "body {background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b0/Winter_forest_silver.jpg');}";
