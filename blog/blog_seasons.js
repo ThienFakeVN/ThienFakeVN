@@ -15,7 +15,7 @@ if (currentSeason === "Spring" || currentSeason === "Reunification Day") {
     document.getElementById("season").innerText = "body {background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fb/XN_Fruehjahrswiese_00.jpg');}";
     document.getElementById("season").innerText = "Credit to the background: Original: Guido Gerding / Wikimedia Commons / “XN Fruehjahrswiese 00” / CC BY-SA 3.0";
     } // Original: Guido Gerding / Wikimedia Commons / “XN Fruehjahrswiese 00” / CC BY-SA 3.0
-else if (currentSeason === "Summer")
+else if (currentSeason === "Summer") {
     document.getElementById("season").innerText = "body {background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Field_Hamois_Belgium_Luc_Viatour.jpg');}";
     document.getElementById("season").innerText = "Credit to the background: Original: Luc Viatour | https://Lucnix.be / Wikimedia Commons / “Field Hamois Belgium Luc Viatour” / CC BY-SA 3.0";
     } // Original: Luc Viatour | https://Lucnix.be / Wikimedia Commons / “Field Hamois Belgium Luc Viatour” / CC BY-SA 3.0
