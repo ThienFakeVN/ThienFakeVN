@@ -10,3 +10,8 @@ div.content {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+section.intro {
+    margin: 1.5em auto;
+    font-size: 2.5m
+}
