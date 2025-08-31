@@ -5,7 +5,7 @@ function seasons(date = new Date()) {
     if (month >= 2 && month <= 4) {if (month === 3 && day === 30) {return "Reunification Day"} return "Spring"}
     else if (month >= 5 && month <= 7) {return "Summer"}
     else if (month >= 8 && month <= 10) {if (month === 8) {if (day === 2) {return "National Day"} else if (day === 15) {return "My birthday!"}} return "Autumn"}
-    else {if (month === 11 && day === 31) {return "New Year's Day"}} {if (month === 0 && day === 1) {return "New Year's Day"}} {return "Winter"}
+    else {if (month === 11 && day === 31) {return "Pre-New Year's Day"}} {if (month === 0 && day === 1) {return "New Year's Day"}} {return "Winter"}
 }
 
 const today = new Date()
