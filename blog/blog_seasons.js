@@ -29,9 +29,9 @@ else if (currentSeason === "Autumn" || currentSeason === "My birthday!") {
     }
 else if (currentSeason === "National Day") {
     document.getElementById("season").textContent = "body {background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/35/L%C4%83ng_Ch%E1%BB%A7_t%E1%BB%8Bch_H%E1%BB%93_Ch%C3%AD_Minh%2C_H%C3%A0_N%E1%BB%99i.jpeg')}"
-    document.getElementById("credit").innerHTML = "<p>[Credit for the background] Original: Linhcandng / Wikipedia Commons / &laquoLăng Chủ tịch Hồ Chí Minh, Hà Nội&raquo / CC BY-SA 3.0</p>"
+    document.getElementById("credit").innerHTML = "<p>[Credit for the background] Original: Linhcandng / Wikimedia Commons / &laquoLăng Chủ tịch Hồ Chí Minh, Hà Nội&raquo / CC BY-SA 3.0</p>"
     }
 else if (currentSeason === "Winter") {
     document.getElementById("season").textContent = "body {background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b0/Winter_forest_silver.jpg')}"
-    document.getElementById("credit").innerHTML = "<p>[Credit for the background] Original: Ernst Vikne / Wikipedia Commons / &laquoWinter forest silver&raquo / CC BY-SA 2.0</p>"
+    document.getElementById("credit").innerHTML = "<p>[Credit for the background] Original: Ernst Vikne / Wikimedia Commons / &laquoWinter forest silver&raquo / CC BY-SA 2.0</p>"
     }
