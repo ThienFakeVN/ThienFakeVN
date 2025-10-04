@@ -12,24 +12,25 @@
 <body>
     <p><i>Find x and y with x > y, knowing that the sum of them is a and if x is divided by y, they produce b as the quotient and c as the remainder</i></p>
     <p>The solution is x + y = a; b * y + c = x</p>
-    <p>This is where you can solve it</p>
+    <p>This is where you can generate shit like that</p>
+    <p>See also: <a href="answer.html">The one which calculates the answer</a></p>
     <input type="text" id="inputx" placeholder="Type the value of x...">
     <input type="text" id="inputy" placeholder="Type the value of y...">
-    <button onclick="showInput()">Calculate!</button>
+    <button onclick="showInput()">Generate!</button>
     <p>a = <span id="outputa"></span></p>
     <p>b = <span id="outputb"></span></p>
     <p>c = <span id="outputc"></span></p>
     <script>
         function showInput() {
-            let x = Number(document.getElementById("inputx").value);
-            let y = Number(document.getElementById("inputy").value);
-            let a = x + y;
-            let b = Math.floor(x / y);
-            let c = x % y;
-            console.log({a: a, b: b, c: c});
-            document.getElementById("outputa").innerText = a;
-            document.getElementById("outputb").innerText = b;
-            document.getElementById("outputc").innerText = c;
+            let x = Number(document.getElementById("inputx").value)
+            let y = Number(document.getElementById("inputy").value)
+            let a = x + y
+            let b = Math.floor(x / y)
+            let c = x % y
+            console.log({a: a, b: b, c: c})
+            document.getElementById("outputa").innerText = a
+            document.getElementById("outputb").innerText = b
+            document.getElementById("outputc").innerText = c
         }
     </script>
 </body>
