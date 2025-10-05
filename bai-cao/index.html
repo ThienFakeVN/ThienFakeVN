@@ -7,11 +7,11 @@
     <meta name="author" content="ThienFakeVN">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: 'Consolas', "courier new"; padding: 20px; }
-        .result { margin-top: 20px; }
-        .player { margin: 8px 0; }
-        input { padding: 5px; }
-        button { padding: 6px 12px; margin-left: 10px; cursor: pointer; }
+        body {font-family: 'Consolas', "courier new"; padding: 20px;}
+        .result {margin-top: 20px;}
+        .player {margin: 8px 0;}
+        input {padding: 5px;}
+        button {padding: 6px 12px; margin-left: 10px; cursor: pointer;}
     </style>
 </head>
 <body>
@@ -19,66 +19,65 @@
     <p>The rule's simple: The one with the highest points wins, but the rule isn't just counting points...</p>
     <label for="players">Enter the amount of players: </label>
     <input type="number" id="players" min="1" max="17" value="2">
-    <button onclick="play()">PLAY!</button>
+    <button onclick="play()">DEAL!</button>
 
     <div class="result" id="result"></div>
 
     <script> // With the help from ChatGPT!! Original Python file's here: bài_cào.py
         function play() {
-            let players = parseInt(document.getElementById("players").value);
-            const resultDiv = document.getElementById("result");
-            resultDiv.innerHTML = "";
+            let players = parseInt(document.getElementById("players").value)
+            const resultDiv = document.getElementById("result")
+            resultDiv.innerHTML = ""
 
             if (isNaN(players) || players <= 0) {
-                resultDiv.innerHTML = "⚠️ The amount of players must be greater than 0!";
-                return;
+                resultDiv.innerHTML = "⚠️ The amount of players must be greater than 0!"
+                return
             }
             if (players > 17) {
-                resultDiv.innerHTML = "⚠️ Too many players! At most 17!";
-                return;
+                resultDiv.innerHTML = "⚠️ Too many players! At most 17!"
+                return
             }
 
             let pack = [
                 "A♠","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠",
                 "A♣","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣",
                 "A♦","2♦","3♦","4♦","5♦","6♦","7♦","8♦","9♦","10♦","J♦","Q♦","K♦",
-                "A♥","2♥","3♥","4♥","5♥","6♥","7♥","8♥","9♥","10♥","J♥","Q♥","K♥"
-            ];
+                "A♥","2♥","3♥","4♥","5♥","6♥","7♥","8♥","9♥","10♥","J♥","Q♥","K♥",
+            ]
 
             for (let i = pack.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [pack[i], pack[j]] = [pack[j], pack[i]];
+                const j = Math.floor(Math.random() * (i + 1))
+                [pack[i], pack[j]] = [pack[j], pack[i]]
             }
 
-            let results = [];
+            let results = []
 
             for (let i = 0; i < players; i++) {
-                let hand = [pack.pop(), pack.pop(), pack.pop()];
-                let ranks = hand.map(c => c.slice(0, -1));
+                let hand = [pack.pop(), pack.pop(), pack.pop()]
+                let ranks = hand.map(c => c.slice(0, -1))
 
-                let points;
-                if (ranks.every(r => ["J","Q","K"].includes(r))) {
-                    points = "Ba cào!!!";
-                } else {
+                let points
+                if (ranks.every(r => ["J","Q","K"].includes(r))) {points = "Ba cào!!!"}
+                else {
                     let values = ranks.map(r => {
-                        if (["J","Q","K"].includes(r)) return 10;
-                        if (r === "A") return 1;
-                        return parseInt(r);
-                    });
-                    points = values.reduce((a,b) => a+b, 0) % 10;
+                        if (["J","Q","K"].includes(r)) return 10
+                        if (r === "A") return 1
+                        return parseInt(r)
+                    })
+                    points = values.reduce((a,b) => a+b, 0) % 10
                 }
 
-                results.push(points);
-                let p = document.createElement("div");
-                p.className = "player";
-                p.textContent = `Player ${i+1}: [${hand.join(", ")}] => ${points}`;
-                resultDiv.appendChild(p);
+                results.push(points)
+                let p = document.createElement("div")
+                p.className = "player"
+                p.textContent = `Player ${i+1}: [${hand.join(", ")}] => ${points}`
+                resultDiv.appendChild(p)
             }
 
-            let final = document.createElement("div");
-            final.innerHTML = "<strong>Results:</strong> " + JSON.stringify(results);
+            let final = document.createElement("div")
+            final.innerHTML = "<strong>Results:</strong> " + JSON.stringify(results)
             console.log(results)
-            resultDiv.appendChild(final);
+            resultDiv.appendChild(final)
         }
     </script>
     <h1>Rules of Bài cào</h1>
