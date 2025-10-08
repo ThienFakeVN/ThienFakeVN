@@ -18,7 +18,7 @@
     <h1>Bài cào</h1>
     <p>The rule's simple: The one with the highest points wins, but the rule isn't just counting points...</p>
     <label for="players">Enter the amount of players: </label>
-    <input type="number" id="players" placeholder="Amount of players" min="1" max="17">
+    <input type="number" id="players" min="1" max="17">
     <button onclick="play()">DEAL!</button>
 
     <div class="result" id="result"></div>
@@ -38,41 +38,40 @@
                 return
             }
 
-            let pack = [
-                "A♠","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠",
-                "A♣","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣",
-                "A♦","2♦","3♦","4♦","5♦","6♦","7♦","8♦","9♦","10♦","J♦","Q♦","K♦",
-                "A♥","2♥","3♥","4♥","5♥","6♥","7♥","8♥","9♥","10♥","J♥","Q♥","K♥",
-            ]
+            let pack = ["A♠","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠",
+                        "A♣","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣",
+                        "A♦","2♦","3♦","4♦","5♦","6♦","7♦","8♦","9♦","10♦","J♦","Q♦","K♦",
+                        "A♥","2♥","3♥","4♥","5♥","6♥","7♥","8♥","9♥","10♥","J♥","Q♥","K♥"]
 
             for (let i = pack.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1))
-                [pack[i], pack[j]] = [pack[j], pack[i]]
+            const j = Math.floor(Math.random() * (i + 1));
+            [pack[i], pack[j]] = [pack[j], pack[i]];
             }
 
-            let results = []
+            let results = [];
 
             for (let i = 0; i < players; i++) {
-                let hand = [pack.pop(), pack.pop(), pack.pop()]
-                let ranks = hand.map(c => c.slice(0, -1))
+                let hand = [pack.pop(), pack.pop(), pack.pop()];
+                let ranks = hand.map(c => c.slice(0, -1));
 
-                let points
-                if (ranks.every(r => ["J","Q","K"].includes(r))) {points = "Ba cào!!!"}
-                else {
-                    let values = ranks.map(r => {
-                        if (["J","Q","K"].includes(r)) return 10
-                        if (r === "A") return 1
-                        return parseInt(r)
-                    })
-                    points = values.reduce((a,b) => a+b, 0) % 10
-                }
+            let points;
+        if (ranks.every(r => ["J","Q","K"].includes(r))) {
+          points = "Ba cào!!!";
+        } else {
+          let values = ranks.map(r => {
+            if (["J","Q","K"].includes(r)) return 10;
+            if (r === "A") return 1;
+            return parseInt(r);
+          });
+          points = values.reduce((a,b) => a+b, 0) % 10;
+        }
 
-                results.push(points)
-                let p = document.createElement("div")
-                p.className = "player"
-                p.textContent = `Player ${i+1}: [${hand.join(", ")}] => ${points}`
-                resultDiv.appendChild(p)
-            }
+        results.push(points);
+        let p = document.createElement("div");
+        p.className = "player";
+        p.textContent = `Người chơi ${i+1}: [${hand.join(", ")}] => ${points}`;
+        resultDiv.appendChild(p);
+      }
 
             let final = document.createElement("div")
             final.innerHTML = "<strong>Results:</strong> " + results.join(", ")
