@@ -1,3 +1,7 @@
+p, ul, section {color: black}
+
+a {text-decoration: none}
+
 body {
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,10 +15,6 @@ div.content {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-section.credit {
-    font-size: 75%;
-}
+section.credit {font-size: 75%}
 
-h1 {
-    text-align: center;
-}
+h1 {text-align: center}

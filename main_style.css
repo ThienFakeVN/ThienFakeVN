@@ -11,6 +11,8 @@ p, ul, section {
     font-family: 'Consolas', "courier new";
 }
 
+a {text-decoration: none}
+
 div.border1 {
     border-left: solid yellow;
     background-color: rgb(255, 255, 204);
@@ -49,4 +51,10 @@ pre {
     background-color: rgb(244, 244, 244);
     padding: 10px;
     border-radius: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {background-color: rgb(18, 18, 18)}
+    p, ul, section, h1, h2, h3, h4, h5, h6 {color: white}
+    a {color: rgb(74, 160, 236)}
 }
