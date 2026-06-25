@@ -16,5 +16,10 @@ my_info = {
         "Python": 2,
         "JavaScript": 1,
     }, # Fun fact: Lua is the first programming language that I've interacted with
+    "accounts on other platforms": {
+        "Youtube": "@Kcf_not_kfc",
+        "X": "@ThieenjVN", # aka Twitter or something idk
+        "PyPI": "ThienFakeVN"
+    },
     "mentionable projects": ["Countries dictionary", "vietnamese_jokes", "SpeaksHalf"]
 }
