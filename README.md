@@ -1,5 +1,25 @@
-I am Thiện. You can call me ThienFakeVN or ThieenjVN. I am a 14 years old student. I love IT (information technology), and that is why I am here.
+```py
+my_info = {
+    "name": "Ngô Trần Quang Thiện",
+    "username": "ThienFakeVN",
+    "country": "Vietnam",
+    "division": "Hồ Chí Minh City",
+    "age": 14, # until my birthday!
+    "occupation": "student", # if you consider it to be an occupation!
+    "website": "https://thienfakevn.github.io",
+    "languages": {
+        "Vietnamese": "first language",
+        "English": "B1",
+        "Russian": "A1",
+    },
+    "programming language": {
+        "Lua": 1, # indicates my level
+        "Python": 2,
+        "JavaScript": 1,
+    }, # Fun fact: Lua is the first programming language that I've interacted with
+    "mentionable projects": ["Countries dictionary", "vietnamese_jokes", "SpeaksHalf"]
+}
+```
 
-This is [my website](https://thienfakevn.github.io/) by the way.
-
-Oh and I love jokes. And here is one: $$1$$
+## Something cannot be described with codes
+I have a SPECIAL coding style ;)
