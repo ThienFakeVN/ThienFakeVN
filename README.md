@@ -18,7 +18,7 @@ my_info = {
         "JavaScript": 1,
     }, # Fun fact: Lua is the first programming language that I've interacted with
     "accounts on other platforms": {
-        "Youtube": "@Kcf_not_kfc",
+        "Youtube": "@kcf2",
         "X": "@ThieenjVN", # aka Twitter or something idk
         "PyPI": "ThienFakeVN"
     },
